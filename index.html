@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+
+
+<style>
+body {
+    margin: 10;
+    background-color: black;
+    padding: 4px 10px;
+}
+img {
+    border-radius: 15px;
+}
+.center {
+  display: block;
+  margin-left: 275px;
+  margin-right: auto;
+}
+button {
+    background-color: red;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+}
+button:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+</style>
+
+<!-- Pac-Man Logo -->
+<img src="pacmanlogo.png" width="300" height="65" class="center">
+
+<h3 style="color: white;">Press 'r' to restart game.</h3>
+
+<!-- Score -->
+<p style ="color: white; font-family: monospace; font-size: 14px; margin-bottom: 6px;">
+    <span>Score: </span><span id="scoreEl">0</span>
+</p>
+
+<!-- Play Button -->
+<!-- <button id="playBtn" type="button" style ="color: black; font-family: monospace; margin-bottom: 6px;">PLAY &#40don't actually press this button; it doesn't work&#41</button> -->
+
+<!-- Pac-Man Game -->
+<canvas></canvas>
+<script src="index.js"></script>
+
+<button class="restart" onclick="restartGame()" id="restart">Restart Game &#40don't actually press this button; it doesn't work&#41</button>
